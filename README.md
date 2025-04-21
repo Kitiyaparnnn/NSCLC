@@ -1,5 +1,8 @@
-# NSCLC
+# 🫁 NSCLC: Multi-classification of subtypes using Gene expression from RNA-sequence 
+
 42698 Special Topics: Clinical Translation
+
+by: Kitiyaporn Takham, Jainam Modh (assistant)
 
 ## Dataset 
 
@@ -17,6 +20,8 @@ Several of the new CTAs are poorly characterized
   
 **Dataset columns**
 - gene_name
-- Stage according to pTNM (stage_code): 1=1a, 2=1b, 3=2a, 4=2b, 5=3a, 6=3b, 7=IV
 - Histology diagnosis spring 2013 HB (diagnosis_code): 1=squamous cell cancer, 2=AC unspecified, 3=Large cell/ NOS
 
+## Machine Learning Model
+
+CatBoost Classifier with class weight evaluated by balanced accuracy and F1 scores using SHAP for model interpretation
